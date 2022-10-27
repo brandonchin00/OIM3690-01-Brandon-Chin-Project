@@ -1,0 +1,68 @@
+/*Add the fading affect for body content to create smooth transition*/
+.main{
+  animation-delay: 4s;
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Transition loader*/
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-image: linear-gradient(135deg, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  display: none;
+  transition: opacity 2s ease-in;
+}
+
+.menu {
+  position: absolute;
+  justify-content: center;
+  text-align: right;
+  right: 10px;
+  top: 10px;
+}
+
+div li{
+  position: relative;
+  list-style: none;
+  width: 150px;
+  opacity: 1;
+  padding: 2.5px;
+}
+div li a{
+  text-decoration: none;
+  color: rgb(197, 197, 197);
+  display: block;
+  text-transform: uppercase;
+  transition: 0.75s;
+}
+div li:hover{
+  transform: translateX(-10px);
+  transition: 1s;
+  font-size: 1.2em;
+}
+div li:hover a{
+  color: #000; 
+}
+
+
+#name, #title, #quote{
+  padding: .5px;
+  margin: 0px;
+}
