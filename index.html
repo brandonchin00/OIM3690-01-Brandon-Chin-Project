@@ -12,29 +12,69 @@
     </head>
     
     <body>
-         <!--Loader-->
+        <!--Loader-->
         <div class="box">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
         <!--Content-->
-        <section class="main">
-            <!--NavBar-->
-            <div class="menu" id="menu1">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="../Resume/Resume-BrandonChin.pdf" target="_blank">Resume</a></li>
-                <li><a href="../Website-design/road map.pdf" target="_blank">Website Design</a></li>
-                <li><a href="#">Contact Me</a></li>
+        <section class="content">
+            <!--NavBar--> <!--Ignore the id a to f right now, I'm testing something with javascript-->
+            <div id="menu">
+                <li><a id="a" href="#">Home</a></li>
+                <li><a id="b" href="#">Experience</a></li>
+                <li><a id="c" href="#">Project</a></li>
+                <li><a id="d" href="../Resume/Resume-BrandonChin.pdf" target="_blank">Resume</a></li>
+                <li><a id="e" href="../Website-design/road map.pdf" target="_blank">Site Map</a></li>
+                <li><a id="f" href="#">Contact Me</a></li>
             </div>
-            <div class="Home" id="home1">
-                <!---Content-->
-                <h3 id="name">Brandon Chin</h3>
-                <h2 id="title">Aspiring Product Manager</h2>
-                <h5 id="quote">"If you can't be proud of your own work. Then why bother working?"</h5>
-                <hr>
+            <!---Homepage-->
+            <div class="structure" id="home1">
+                <h1 id="name">Brandon Chin</h1>
+                <h1 id="title">Product Manager</h1>
+                <h1 id="location">New York, NY</h1>
             </div>
-        </section> <!--Headers-->
-        <script src="main.js"></script> 
+            <!---Bio-->
+            <div class="structure" id="bio">
+                <p> 
+                    Growing up in a small family business, I knew I wanted to work in a business-related field; however, I was uncertain of what "specifically". 
+
+                    “What is my passion? What can I see myself doing in 5, 10, or maybe 20 years?”
+
+                    To discover what genuinely excited me I sought to experience every department of a company: Finance, Marketing, Accounting, and Human Resources. 
+
+                    With every opportunity, I took action to truly discover my passion.  
+
+                    With my passion for technology and my expertise in business operations, I pivoted to a job I knew I'll love and grow: Product Manager.
+                </p>
+            </div>
+            <!---Skills-->
+            <div class="structure" id="skill-table">
+                <div class="skills">
+                    
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-percent" id="skill1"percent="30%"></div>
+                    </div>
+
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-percent" id="skill2" percent="30%"></div>
+                    </div>
+
+                    <div class="skill-name">Javascript</div>
+                    <div class="skill-bar">
+                        <div class="skill-percent" id="skill3" percent="30%"></div>
+                    </div>
+
+                    <div class="skill-name">Lua</div>
+                    <div class="skill-bar">
+                        <div class="skill-percent" id="skill4" percent="30%"></div>
+                    </div>
+
+            </div>
+        </section>
+
+        <script src="load.js"></script> <!---Execute Loader Script-->
+        <script src="main.js"></script> <!---Execute Index Javascripts-->
     </body> 
 </html>

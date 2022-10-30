@@ -1,15 +1,11 @@
+/*jshint esversion: 6 */
 
-const box = document.querySelector('.box');
-const main = document.querySelector('.main');
+//scroll effect for name
+/*
+window.addEventListener('scroll', function(){
+    let brandon = document.getElementById('name');
+    let value = window.scrollY;
+    brandon.style.top = value * 0.5 + 'px';
 
-function init() {
-    setTimeout(() => {
-        box.style.opacity = 0;
-        box.style.display = 'none';
-
-        main.style.display = 'block';
-        setTimeout(()=> (main.style.opacity = 1), 50);
-    }, 3500);
-}
-
-init();
+});
+*/
