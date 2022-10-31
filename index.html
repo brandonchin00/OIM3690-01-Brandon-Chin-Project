@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, 
-        initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Brandon, Brandon Chin, Personal Website">
+        <meta name="author" content="Brandon Chin">
         <meta http-equiv="X-UA-Compatible" content ="ie=edge">
         <title>Brandon's Portfolio</title>
-
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
         <link rel="stylesheet" href="css/style.css"> <!--CSS style-->
         <link rel="stylesheet" href="css/loader1.css"> <!--Loader for Website-->
     </head>
@@ -20,12 +21,10 @@
         <section class="content">
             <!--NavBar--> <!--Ignore the id a to f right now, I'm testing something with javascript-->
             <div id="menu">
-                <li><a id="a" href="#">Home</a></li>
-                <li><a id="b" href="#">Experience</a></li>
-                <li><a id="c" href="#">Project</a></li>
-                <li><a id="d" href="../Resume/Resume-BrandonChin.pdf" target="_blank">Resume</a></li>
-                <li><a id="e" href="../Website-design/road map.pdf" target="_blank">Site Map</a></li>
-                <li><a id="f" href="#">Contact Me</a></li>
+                <li class="list1"><a  href="#">Home</a></li>
+                <li class="list1"><a  href="../Resume/Resume-BrandonChin.pdf" target="_blank">Resume</a></li>
+                <li class="list1"><a  href="../Website-design/road map.pdf" target="_blank">Site Map</a></li>
+                <li class="list1"><a  href="#">Contact Me</a></li>
             </div>
             <!---Homepage-->
             <div class="structure" id="home1">
@@ -49,31 +48,76 @@
             </div>
             <!---Skills-->
             <div class="structure" id="skill-table">
-                <div class="skills">
+                <h1 id="skill-header"> Skillset</h1>
+                
+                    <div class="skills item item-1">
+
+                        <h1 class="title-skill"><b>Technical Skills</b></h1>
+                        
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-percent" id="skill1"percent="45%"></div>
+                        </div>
+
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-percent" id="skill2" percent="30%"></div>
+                        </div>
+
+                        <div class="skill-name">Javascript</div>
+                        <div class="skill-bar">
+                            <div class="skill-percent" id="skill3" percent="25%"></div>
+                        </div>
+
+                        <div class="skill-name">Lua</div>
+                        <div class="skill-bar">
+                            <div class="skill-percent" id="skill4" percent="40%"></div>
+                        </div>
+
+                    </div>
+                    <div class="software-skills item item-2">
+                        <h1 class="title-skill"><b>Software Skills</b></h1>
+                        <ul class="skill-list">
+                            <li>Tableau</li>
+                            <li>Micrsoft: Excel, Project, Access</li>
+                            <li>Airtable</li>
+                            <li>Figma</li>
+                            <li>Adobe Premier Pro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="structure" id="contact-form">
+                <div class="container">
+                    <form action="">
+                        <h1 id="contactme1">Contact Me</h1>
+
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="firstname" placeholder="Your first name..">
                     
-                    <div class="skill-name">Python</div>
-                    <div class="skill-bar">
-                        <div class="skill-percent" id="skill1"percent="30%"></div>
-                    </div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="firstname" placeholder="Your last name..">
 
-                    <div class="skill-name">HTML/CSS</div>
-                    <div class="skill-bar">
-                        <div class="skill-percent" id="skill2" percent="30%"></div>
-                    </div>
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="firstname" placeholder="Your company name..">
 
-                    <div class="skill-name">Javascript</div>
-                    <div class="skill-bar">
-                        <div class="skill-percent" id="skill3" percent="30%"></div>
-                    </div>
-
-                    <div class="skill-name">Lua</div>
-                    <div class="skill-bar">
-                        <div class="skill-percent" id="skill4" percent="30%"></div>
-                    </div>
-
+                        <label for="note">Send a Note</label>
+                        <textarea id="note" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="structure" id="sitemap">
+                <h1 id="topic">About Me</h1>
+                <li class="list2"><a  href="">Name</a></li>
+                <li class="list2"><a  href="">Bio</a></li>
+                <li class="list2"><a  href="">Technical Skills</a></li>
+                <li class="list2"><a  href="">Software Skills</a></li>
+                <li class="list2"><a  href="">Contact Me</a></li>
             </div>
         </section>
-
+            
         <script src="load.js"></script> <!---Execute Loader Script-->
         <script src="main.js"></script> <!---Execute Index Javascripts-->
     </body> 
