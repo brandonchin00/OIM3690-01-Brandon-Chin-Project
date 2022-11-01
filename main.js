@@ -10,6 +10,8 @@ window.addEventListener('scroll', function(){
 });
 */
 
+
+//form submission 
 document.getElementById("submit-button").onclick = function () {
     window.alert("You'll be redirected to your email account. Thank you for sending me an email. I'll be in contact shortly!");
 };
@@ -23,11 +25,14 @@ window.alert("This is Website is a Work-Progress, Subject to Change");
 
 let stars = document.getElementById('stars');
 
+//moving image 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.marginTop = value * 0.5 + 'px';
 });
 
+
+//title change
 document.getElementById('title').addEventListener('mouseover', function titleOver (){
     const job = document.getElementById('title');
     job.innerHTML = "Babson College Student";

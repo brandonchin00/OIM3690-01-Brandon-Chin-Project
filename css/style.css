@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .structure{
@@ -49,6 +48,7 @@ img{
   object-fit: cover;
   width: 100%;
   position: absolute;
+  overflow-x: hidden;
 }
 
 #home1 {
@@ -164,7 +164,7 @@ img{
   padding: 4px 6px;
   background: white;
   border-radius: 4px;
-  font-size: 12px; 
+  font-size: 20px; 
   top: -35px;
   right: 0;
   transform: translateX(50%);
@@ -199,7 +199,7 @@ img{
 }
 
 #skill3{
-  max-width: 25%;
+  max-width: 30%;
 }
 
 #skill4{
