@@ -144,7 +144,7 @@ body{
 .skill-percent{
   height: 14px;
   color: black;
-  background: rgb(182, 225, 255);
+  background: white;
   border-radius: 3px; 
   position: relative;
   animation: fillBars  6.5s;
@@ -154,7 +154,7 @@ body{
   content: attr(percent);
   position: absolute;
   padding: 4px 6px;
-  background: lightblue;
+  background: white;
   border-radius: 4px;
   font-size: 12px; 
   top: -35px;
@@ -166,7 +166,7 @@ body{
   position: absolute;
   width: 10px;
   height: 10px;
-  background: lightblue; 
+  background: white; 
   top: -20px;
   right: 0;
   transform: translateX(50%) rotate(45deg);
@@ -206,6 +206,7 @@ body{
   list-style-type: none;
   color: black;
   text-decoration: none;
+  padding: 30px;
 }
 
 /* Skill Page Grid Design*/
@@ -230,12 +231,14 @@ body{
 
 .item-1{
   grid-area: space1;
-  margin: 100px;
+  margin: 50px;
+  background-color: rgb(187, 222, 240);
 }
 
 .item-2{
   grid-area: space2;
-  margin: 100px;
+  margin: 50px;
+  background-color: rgb(187, 222, 240);
 }
 
 .item{
@@ -248,13 +251,17 @@ body{
   font-weight: 400;
   font-size: 40px;
   padding: 20px;
+  text-align: center;
 }
 
 /* contact form */
 
 #contactme1{
+  background-color: rgb(187, 222, 240);
   font-size: 40px;
-  color: white;
+  color: black;
+  border-radius: 8px;
+  text-align: center;
 }
 
 
@@ -268,12 +275,19 @@ input[type=text], textarea{
 }
 
 #submit-button{
-  background-color: white;
+  background-color: rgb(187, 222, 240);
   color: black;
   font-family: inherit;
   padding: 20px;
   text-decoration: none;
   border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#submit-button:hover{
+  color: white;
+  cursor: pointer;
 }
 
 label{
