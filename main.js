@@ -10,3 +10,7 @@ window.addEventListener('scroll', function(){
 });
 */
 
+document.getElementById("submit-button").onclick = function () {
+    window.alert("You'll be redirected to your email account. Thank you for sending me an email. I'll be in contact shortly!");
+};
+

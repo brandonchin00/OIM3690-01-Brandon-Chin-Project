@@ -21,10 +21,10 @@
         <section class="content">
             <!--NavBar--> <!--Ignore the id a to f right now, I'm testing something with javascript-->
             <div id="menu">
-                <li class="list1"><a  href="#">Home</a></li>
-                <li class="list1"><a  href="" target="_blank">Resume</a></li>
-                <li class="list1"><a  href="../Website-design/road map.pdf" target="_blank">Site Map</a></li>
-                <li class="list1"><a  href="#">Contact Me</a></li>
+                <li class="list1"><a  href="#home1">Home</a></li>
+                <li class="list1"><a  href="#" target="_blank">Resume</a></li> <!---I removed the resume temporarily for peer revision-->
+                <li class="list1"><a  href="#sitemap">Site Map</a></li>
+                <li class="list1"><a  href="#contact-form">Contact Me</a></li>
             </div>
             <!---Homepage-->
             <div class="structure" id="home1">
@@ -45,7 +45,7 @@
 
                     With every opportunity, I took action to truly discover my passion.  
 
-                    With my passion for technology and my expertise in business operations, I pivoted to a job I knew I'll love and grow: Product Manager.
+                    I found my passion in technology, as a result, I pivoted to a job I knew I'll love and grow: Product Manager.
                 </p>
             </div>
             <!---Skills-->
@@ -91,32 +91,34 @@
             </div>
             <div class="structure" id="contact-form">
                 <div class="container">
-                    <form action="">
+                    <form action="mailto:brandonzchin@gmail.com" method="POST" enctype="text/plain">
+
+
                         <h1 id="contactme1">Contact Me</h1>
 
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="firstname" placeholder="Your first name..">
+                        <input type="text" id="first-name" name="First-name" placeholder="Your first name..">
                     
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="firstname" placeholder="Your last name..">
+                        <input type="text" id="last-name" name="Last-name" placeholder="Your last name..">
 
                         <label for="company">Company</label>
-                        <input type="text" id="company" name="firstname" placeholder="Your company name..">
+                        <input type="text" id="company" name="Company-name" placeholder="Your company name..">
 
                         <label for="note">Send a Note</label>
-                        <textarea id="note" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <textarea id="note" name="Subject" placeholder="Write something.." style="height:200px"></textarea>
                     
                         <input id="submit-button" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
             <div class="structure" id="sitemap">
-                <h1 id="topic">SiteMap</h1>
-                <li class="list2"><a  href="">Name</a></li>
-                <li class="list2"><a  href="">Bio</a></li>
-                <li class="list2"><a  href="">Technical Skills</a></li>
-                <li class="list2"><a  href="">Software Skills</a></li>
-                <li class="list2"><a  href="">Contact Me</a></li>
+                <h1 id="topic">SiteMap:</h1>
+                <li class="list2"><a  href="#home1">Name</a></li>
+                <li class="list2"><a  href="#bio">Bio</a></li>
+                <li class="list2"><a  href="#skill-table">Technical Skills</a></li>
+                <li class="list2"><a  href="#skill-table">Software Skills</a></li>
+                <li class="list2"><a  href="#contact-form">Contact Me</a></li>
             </div>
         </section>
             

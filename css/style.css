@@ -91,12 +91,14 @@ body{
   color: rgb(182, 225, 255);
   text-transform: uppercase;
   transition: 0.75s;
+  padding: 10px;
 }
 
 .list1 a:hover{
   color: rgb(249, 246, 246);
   transform: translateY(10px);
   transition: 1s;
+  background-color: black;
 }
 
 /* sticky name to navbar */
