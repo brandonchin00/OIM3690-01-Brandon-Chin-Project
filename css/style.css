@@ -41,15 +41,24 @@ body{
   background-color: rgb(19, 17, 17);
 }
 
-/* introduction structure */
+/* images testing  */
 
-img{
+#stars{
   z-index: 0;
   object-fit: cover;
   width: 100%;
   position: absolute;
   overflow-x: hidden;
 }
+
+#cloud{
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+}
+
+
+/* introduction structure */
 
 #home1 {
   margin-top: 225px;
@@ -121,11 +130,19 @@ img{
   margin-bottom: 100px;
 }
 
+/* gradient */
+#bar{
+  min-height: 30vh;
+  overflow-x: hidden;
+  background: linear-gradient(rgb(19, 17, 17), rgb(182, 225, 255));
+}
+
+
 /* Skills */
 
 #skill-table{
   font-size: 60px;
-  background-color: white;
+  background-color: rgb(182, 225, 255);
   color: white;
 }
 
@@ -152,7 +169,7 @@ img{
 .skill-percent{
   height: 14px;
   color: black;
-  background: white;
+  background: rgb(182, 225, 255);
   border-radius: 3px; 
   position: relative;
   animation: fillBars  6.5s;
@@ -162,7 +179,7 @@ img{
   content: attr(percent);
   position: absolute;
   padding: 4px 6px;
-  background: white;
+  background: rgb(182, 225, 255);
   border-radius: 4px;
   font-size: 20px; 
   top: -35px;
@@ -174,7 +191,7 @@ img{
   position: absolute;
   width: 10px;
   height: 10px;
-  background: white; 
+  background: rgb(182, 225, 255); 
   top: -20px;
   right: 0;
   transform: translateX(50%) rotate(45deg);
@@ -233,6 +250,7 @@ img{
 #skill-header{
   grid-area: heading;
   color: black;
+  font-weight: 300;
   font-size: 50px;
   text-align: center;
 }
@@ -240,13 +258,13 @@ img{
 .item-1{
   grid-area: space1;
   margin: 50px;
-  background-color: rgb(187, 222, 240);
+  background-color: white;
 }
 
 .item-2{
   grid-area: space2;
   margin: 50px;
-  background-color: rgb(187, 222, 240);
+  background-color: white;
 }
 
 .item{
@@ -270,7 +288,9 @@ img{
   color: black;
   border-radius: 8px;
   text-align: center;
+  font-weight: 300;
 }
+
 
 
 input[type=text], textarea{

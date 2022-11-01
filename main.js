@@ -24,11 +24,13 @@ function revealItem(){
 window.alert("This is Website is a Work-Progress, Subject to Change");
 
 let stars = document.getElementById('stars');
+let cloud = document.getElementById('cloud');
 
 //moving image 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.marginTop = value * 0.5 + 'px';
+
 });
 
 
