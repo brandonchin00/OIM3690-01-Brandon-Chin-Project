@@ -7,6 +7,24 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; 
 }
 
+.container1 {
+  width: 100%;
+  height: 8px;
+  background: black;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.bar {
+  height: 8px;
+  background: white;
+  width: 0%;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
 .structure{
   position: relative;
   width: 100%;
