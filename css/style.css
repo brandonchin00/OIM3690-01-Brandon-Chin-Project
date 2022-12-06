@@ -1,9 +1,32 @@
 /* framing the structure */
+/*@media (min-width: 500px)*/
+/*@media (max-width: 500px)*/
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+/*Progress Bar*/
+.container {
+  width: 100%;
+  height: 8px;
+  background: black;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.bar {
+  height: 8px;
+  background: white;
+  width: 0%;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
 }
 
 .structure{
@@ -51,12 +74,6 @@ body{
   overflow-x: hidden;
 }
 
-#cloud{
-  z-index: 0;
-  width: 100%;
-  position: absolute;
-}
-
 
 /* introduction structure */
 
@@ -68,6 +85,12 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+#intro{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px;
+  font-size: 5vw;
 }
 
 #name{
@@ -84,6 +107,9 @@ body{
   margin: 5px;
   font-size: 35px;
 }
+*/
+/* old homepage introduction */
+
 /* navbar */
 
 #menu {
@@ -106,7 +132,7 @@ body{
 .list1 a{
   display: inline-block;
   text-decoration: none;
-  color: rgb(182, 225, 255);
+  color: rgb(249, 246, 246);
   text-transform: uppercase;
   transition: 0.75s;
   padding: 10px;
@@ -122,8 +148,9 @@ body{
 /* sticky name to navbar */
 
 /* bio */
-#bio{
+#generalcss{
   background-color: inherit;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   font-size: 40px;
   margin-top: 100px;
@@ -283,14 +310,12 @@ body{
 /* contact form */
 
 #contactme1{
-  background-color: rgb(187, 222, 240);
   font-size: 40px;
-  color: black;
+  color: white;
   border-radius: 8px;
   text-align: center;
   font-weight: 300;
 }
-
 
 
 input[type=text], textarea{
@@ -313,8 +338,13 @@ input[type=text], textarea{
   font-size: 20px;
 }
 
+#button-holder{
+  text-align: center;
+}
+
 #submit-button:hover{
   color: white;
+  background:rgb(97, 95, 95);
   cursor: pointer;
 }
 
@@ -328,7 +358,12 @@ label{
 /*sitemap*/
 #sitemap{
   color: white;
+  display: inline;
+  width: 100%;
+  opacity: 1;
+  padding: 5px;
 }
+
 .list2 a{
   color: white;
   text-decoration: none;
@@ -336,6 +371,7 @@ label{
 }
 
 .list2{
+  display: inline-block;
   list-style-type: none;
   padding: 20px;
 }

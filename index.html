@@ -19,6 +19,10 @@
         </div>
         <!--Content-->
         <section class="content">
+            <!--Progress Bar--> 
+            <div class="container">
+                <div class="bar" id="move"></div>
+              </div>        
             <!--NavBar--> <!--Ignore the id a to f right now, I'm testing something with javascript-->
             <div id="menu">
                 <li class="list1"><a  href="#home1">Home</a></li>
@@ -27,40 +31,46 @@
                 <li class="list1"><a  href="#contact-form">Contact Me</a></li>
             </div>
             <!---Homepage-->
-            <img src="images/stars.png" id="stars" alt="stars" title="stars">
-            <div class="structure" id="home1">
-                <h1 id="name">Brandon Chin</h1>
-                <h1 id="title">Product Manager</h1>
-                <h1 id="location">New York, NY</h1>
+            
+            <div class="structure">
+                <div id="style2">
+                <div class="wrapper">
+                    <div class="static-txt">I am</div>
+                    <ul class="dynamic-txts">
+                      <li><span>Brandon Chin</span></li>
+                      <li><span>a Product Manager</span></li>
+                      <li><span>a Designer</span></li>
+                      <li><span>a College Student</span></li>
+                    </ul>
+                  </div>
+                </div>
             </div>
             
             <!---Bio-->
-            <div class="structure" id="bio">
+            <img src="images/stars.png" id="stars" alt="stars" title="stars">
+            <div class="structure" id="generalcss">
                 <p> 
-                    Growing up in a small family business, I knew I wanted to work in a business-related field; however, I was uncertain of what "specifically". 
-
-                    “What is my passion? What can I see myself doing in 5, 10, or maybe 20 years?”
+                    I am both an undergraduate student at Babson College and an aspiring product manager.
                     
-                    <br>
+                </p>
+            </div>
 
-                    To discover what genuinely excited me I sought to experience every department of a company: Finance, Marketing, Accounting, and Human Resources. 
-
-                    With every opportunity, I took action to truly discover my passion.  
-
-                    I found my passion in technology, as a result, I pivoted to a job I knew I'll love and grow: Product Manager.
+            <div class="structure" id="generalcss">
+                <p> 
+                    I am both an undergraduate student at Babson College and an aspiring product manager.
+                    
                 </p>
             </div>
             <!---Gradient-->
-            <img src="images/clouds.png" id="cloud" alt="cloud" title="clouds">
             <div id="bar">
-                <pre>
+                <p>
 
 
 
 
 
 
-                </pre>
+                </p>
             </div>
             <!---Skills-->
             <div class="structure" id="skill-table">
@@ -103,11 +113,11 @@
                     </div>
                 </div>
             </div>
+            <!---Project Experience-->
             <!---Contact Form-->
             <div class="structure" id="contact-form">
-                <div class="container">
+                <div class="container1">
                     <form action="mailto:brandonzchin@gmail.com" method="POST" enctype="text/plain">
-
 
                         <h1 id="contactme1">Contact Me</h1>
 
@@ -121,15 +131,17 @@
                         <input type="text" id="company" name="Company-name" placeholder="Your company name..">
 
                         <label for="note">Send a Note</label>
-                        <textarea id="note" name="Subject" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <input id="submit-button" type="submit" value="Submit">
+                        <textarea id="note" name="Subject" placeholder="Write something.." style="height:100px"></textarea>
+                        <div id="button-holder">
+                            <input id="submit-button" type="submit" value="Send">
+                        </div>
+                        
+                        
                     </form>
                 </div>
             </div>
             <!---Site Map-->
-            <div class="structure" id="sitemap">
-                <h1 id="topic">SiteMap:</h1>
+            <div id="sitemap">
                 <li class="list2"><a  href="#home1">Name</a></li>
                 <li class="list2"><a  href="#bio">Bio</a></li>
                 <li class="list2"><a  href="#skill-table">Technical Skills</a></li>

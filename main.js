@@ -21,8 +21,6 @@ function revealItem(){
 
 }
 
-window.alert("This is Website is a Work-Progress, Subject to Change");
-
 let stars = document.getElementById('stars');
 let cloud = document.getElementById('cloud');
 
@@ -47,3 +45,12 @@ document.getElementById('title').addEventListener('mouseout', function titleOver
     job.innerHTML = "Product Manager";
     job.style.color = "rgb(197, 197, 197)";
 });
+
+
+window.addEventListener('scroll', () => {
+    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (scroll / height) * 100;
+    document.getElementById("move").style.width = scrolled + "%";
+});
+
