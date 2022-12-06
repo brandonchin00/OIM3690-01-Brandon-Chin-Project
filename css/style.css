@@ -159,9 +159,9 @@ body{
 
 /* gradient */
 #bar{
-  min-height: 40vh;
+  min-height: 30vh;
   overflow-x: hidden;
-  background: linear-gradient(transparent, rgb(19, 17, 17), rgb(182, 225, 255));
+  background: linear-gradient(rgb(19, 17, 17), rgb(182, 225, 255));
 }
 
 

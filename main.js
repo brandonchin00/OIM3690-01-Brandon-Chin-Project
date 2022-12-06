@@ -28,7 +28,6 @@ let cloud = document.getElementById('cloud');
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.marginTop = value * 0.5 + 'px';
-    cloud.style.marginTop = value * -0.10 + 'px';
 
 });
 
