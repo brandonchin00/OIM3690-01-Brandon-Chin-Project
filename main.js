@@ -45,3 +45,15 @@ document.getElementById('title').addEventListener('mouseout', function titleOver
     job.innerHTML = "Product Manager";
     job.style.color = "rgb(197, 197, 197)";
 });
+
+window.addEventListener("scroll", () => {
+    running();
+});
+
+
+function running() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("move").style.width = scrolled + "%";
+  }
