@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; 
 }
 
 .structure{
@@ -51,11 +52,6 @@ body{
   overflow-x: hidden;
 }
 
-#cloud{
-  z-index: 0;
-  width: 100%;
-  position: absolute;
-}
 
 
 /* introduction structure */
@@ -106,14 +102,14 @@ body{
 .list1 a{
   display: inline-block;
   text-decoration: none;
-  color: rgb(182, 225, 255);
+  color: white;
   text-transform: uppercase;
   transition: 0.75s;
   padding: 10px;
 }
 
 .list1 a:hover{
-  color: rgb(249, 246, 246);
+  color: white;
   transform: translateY(10px);
   transition: 1s;
   background-color: black;
@@ -282,16 +278,27 @@ body{
 
 /* contact form */
 
+.container{
+  border: 2px solid white;
+  padding: 10px;
+}
 #contactme1{
-  background-color: rgb(187, 222, 240);
   font-size: 40px;
-  color: black;
+  color: white;
   border-radius: 8px;
   text-align: center;
   font-weight: 300;
 }
 
-
+#p1{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+#note{
+  min-height: 100px;
+  min-width: 100%;
+}
 
 input[type=text], textarea{
   width: 100%;
@@ -302,11 +309,14 @@ input[type=text], textarea{
   border-radius: 8px;
 }
 
+#button-wrapper{
+  text-align: center;
+}
 #submit-button{
-  background-color: rgb(187, 222, 240);
+  background-color: grey;
   color: black;
   font-family: inherit;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   border-radius: 8px;
   text-transform: uppercase;
@@ -314,7 +324,8 @@ input[type=text], textarea{
 }
 
 #submit-button:hover{
-  color: white;
+  color: black;
+  background: white;
   cursor: pointer;
 }
 
