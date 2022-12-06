@@ -32,18 +32,23 @@ window.addEventListener('scroll', function(){
 
 });
 
+window.addEventListener("load", () => {
+    word();
+});
 
 //title change
 document.getElementById('title').addEventListener('mouseover', function titleOver (){
     const job = document.getElementById('title');
     job.innerHTML = "Babson College Student";
     job.style.color = "green";
+    job.style.font = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
 });
 
 document.getElementById('title').addEventListener('mouseout', function titleOver (){
     const job = document.getElementById('title');
-    job.innerHTML = "Product Manager";
-    job.style.color = "rgb(197, 197, 197)";
+    job.innerHTML = "Business School";
+    job.style.color = "white";
+    job.style.font = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
 });
 
 window.addEventListener("scroll", () => {
@@ -57,3 +62,12 @@ function running() {
     let scrolled = (winScroll / height) * 100;
     document.getElementById("move").style.width = scrolled + "%";
   }
+
+function word(){
+    let typed = new Typed(".auto-input", {
+        strings: ["Brandon Chin", "a Product Manager", "a Student Developer", "a Swim Instructor"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+    });
+}
