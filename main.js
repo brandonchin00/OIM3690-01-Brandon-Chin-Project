@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
 //title change
 document.getElementById('title').addEventListener('mouseover', function titleOver (){
     const job = document.getElementById('title');
-    job.innerHTML = "Babson College Student";
+    job.innerHTML = "Babson College";
     job.style.color = "green";
     job.style.font = "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
 });

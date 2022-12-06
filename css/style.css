@@ -165,6 +165,10 @@ body{
   margin-bottom: 100px;
 }
 
+#aa{
+text-decoration: none;
+color: white;
+}
 /* gradient */
 #bar{
   min-height: 40vh;
