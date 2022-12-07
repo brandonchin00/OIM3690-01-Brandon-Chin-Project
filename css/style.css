@@ -169,6 +169,13 @@ body{
 text-decoration: none;
 color: white;
 }
+
+#image-b{
+  border: 2px white solid;
+}
+/* timeline */
+
+
 /* gradient */
 #bar{
   min-height: 40vh;
