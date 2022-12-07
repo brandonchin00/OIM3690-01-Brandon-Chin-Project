@@ -65,7 +65,7 @@ function running() {
 
 function word(){
     let typed = new Typed(".auto-input", {
-        strings: ["Brandon Chin", "a Product Manager", "a Student Developer", "a Part-Time Swim Instructor"],
+        strings: ["Brandon Chin", "a Product Manager", "a Student Developer", "a Swim Instructor"],
         typeSpeed: 100,
         backSpeed: 100,
         loop: true,
