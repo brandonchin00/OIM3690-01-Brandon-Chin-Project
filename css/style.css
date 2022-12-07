@@ -169,6 +169,10 @@ body{
 text-decoration: none;
 color: white;
 }
+
+#image-b{
+  border: 2px solid white;
+}
 /* gradient */
 #bar{
   min-height: 40vh;
