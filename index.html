@@ -19,47 +19,50 @@
         </div>
         <!--Content-->
         <section class="content">
-            <!--Progress Bar--> 
-            <div class="container">
+            <!--Progress Bar-->
+            <div class="container1">
                 <div class="bar" id="move"></div>
-              </div>        
+            </div>  
             <!--NavBar--> <!--Ignore the id a to f right now, I'm testing something with javascript-->
             <div id="menu">
                 <li class="list1"><a  href="#home1">Home</a></li>
-                <li class="list1"><a  href="/Resume/Brandon-Chin-Website-Resume.pdf" target="_blank">Resume</a></li> <!---I removed the resume temporarily for peer revision-->
-                <li class="list1"><a  href="#sitemap">Site Map</a></li>
-                <li class="list1"><a  href="#contact-form">Contact Me</a></li>
+                <li class="list1"><a  href="#bio">About</a></li> <!---I removed the resume temporarily for peer revision-->
+                <li class="list1"><a  href="#bio">Portfolio</a></li>
+                <li class="list1"><a  href="#skill-table">Skills</a></li>
+                <!--<li class="list1"><a  href="#sitemap">Site Map</a></li> I don't like the link on my navbar but here it is if you want to use it just uncomment it-->
+                <li class="list1"><a  href="#contact-form">Contact</a></li>
             </div>
             <!---Homepage-->
-            
-            <div class="structure">
-                <div id="style2">
-                <div class="wrapper">
-                    <div class="static-txt">I am</div>
-                    <ul class="dynamic-txts">
-                      <li><span>Brandon Chin</span></li>
-                      <li><span>a Product Manager</span></li>
-                      <li><span>a Designer</span></li>
-                      <li><span>a College Student</span></li>
-                    </ul>
-                  </div>
-                </div>
+            <img src="images/stars.png" id="stars" alt="stars" title="stars">
+            <div class="structure" id="home1">
+                <h2 id="first">Hello. I am</h2>
+                <h1 id="name"><span class="auto-input"></span></h1> <!---For SEO-->
+                <a id="resume" href="/Resume/Brandon-Chin-Website-Resume.pdf" target="_blank">Download CV</a>
             </div>
             
             <!---Bio-->
-            <img src="images/stars.png" id="stars" alt="stars" title="stars">
-            <div class="structure" id="generalcss">
-                <p> 
-                    I am both an undergraduate student at Babson College and an aspiring product manager.
-                    
-                </p>
+            <div class="structure" id="bio">
+                <div class="container-b"></div>
+                    <p> 
+                        Growing up in a small family business, I knew I wanted to work in business; however, I wasn't certain of what in business I wanted to do. 
+                        <br>
+                        <br> 
+                        <br>
+                        So I left to a renowned <a id="aa" href="https://www.babson.edu/" target="blank"><span id="title">Business School</span></a>
+                        <br>
+                        <br>
+                        <br>
+                        To uncover the paths in business, I sought to discover my passion through internships
+                        <!--I was a bit lazy to figure out the spacing so I just added a lot of br-->
+                    </p>
+                    <div id="image-b">
+                        <img src="images/brando.png" alt="brandon's picture">
+                    </div>
+                </div>
             </div>
+            <!---timeline or portfolio idk what i have chosen yet-->
+            <div class="structure">
 
-            <div class="structure" id="generalcss">
-                <p> 
-                    I am both an undergraduate student at Babson College and an aspiring product manager.
-                    
-                </p>
             </div>
             <!---Gradient-->
             <div id="bar">
@@ -71,6 +74,7 @@
 
 
                 </p>
+                <!---testing something here but pretty sure this isn't relevant to the spacing of gradient-->
             </div>
             <!---Skills-->
             <div class="structure" id="skill-table">
@@ -82,22 +86,22 @@
                         
                         <div class="skill-name">Python</div>
                         <div class="skill-bar">
-                            <div class="skill-percent" id="skill1"percent="45%"></div>
+                            <div class="skill-percent" id="skill1"percent="40%"></div>
                         </div>
 
                         <div class="skill-name">HTML/CSS</div>
                         <div class="skill-bar">
-                            <div class="skill-percent" id="skill2" percent="30%"></div>
+                            <div class="skill-percent" id="skill2" percent="50%"></div>
                         </div>
 
                         <div class="skill-name">Javascript</div>
                         <div class="skill-bar">
-                            <div class="skill-percent" id="skill3" percent="35%"></div>
+                            <div class="skill-percent" id="skill3" percent="50%"></div>
                         </div>
 
                         <div class="skill-name">Lua</div>
                         <div class="skill-bar">
-                            <div class="skill-percent" id="skill4" percent="40%"></div>
+                            <div class="skill-percent" id="skill4" percent="60%"></div>
                         </div>
 
                     </div>
@@ -105,7 +109,7 @@
                         <h1 class="title-skill"><b>Software Skills</b></h1>
                         <ul class="skill-list">
                             <li>Tableau</li>
-                            <li>Microsoft: Excel, Project, Access</li>
+                            <li>MS: Excel, Project, Access</li>
                             <li>Airtable</li>
                             <li>Figma</li>
                             <li>Adobe Premier Pro</li>
@@ -113,13 +117,14 @@
                     </div>
                 </div>
             </div>
-            <!---Project Experience-->
             <!---Contact Form-->
             <div class="structure" id="contact-form">
-                <div class="container1">
+                <div class="container">
                     <form action="mailto:brandonzchin@gmail.com" method="POST" enctype="text/plain">
 
+
                         <h1 id="contactme1">Contact Me</h1>
+                        <p id="p1">Send me a message and I'll get back to you as soon as possible</p>
 
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="First-name" placeholder="Your first name..">
@@ -131,17 +136,17 @@
                         <input type="text" id="company" name="Company-name" placeholder="Your company name..">
 
                         <label for="note">Send a Note</label>
-                        <textarea id="note" name="Subject" placeholder="Write something.." style="height:100px"></textarea>
-                        <div id="button-holder">
-                            <input id="submit-button" type="submit" value="Send">
+                        <textarea id="note" name="Subject" placeholder="Write something.."></textarea>
+                        <div id="button-wrapper">
+                            <input id="submit-button" type="submit" value="send">
                         </div>
-                        
                         
                     </form>
                 </div>
             </div>
             <!---Site Map-->
-            <div id="sitemap">
+            <div class="structure" id="sitemap">
+                <h1 id="topic">SiteMap:</h1>
                 <li class="list2"><a  href="#home1">Name</a></li>
                 <li class="list2"><a  href="#bio">Bio</a></li>
                 <li class="list2"><a  href="#skill-table">Technical Skills</a></li>
@@ -152,5 +157,7 @@
         <!--Execution-->
         <script src="load.js"></script> <!---Execute Loader Script-->
         <script src="main.js"></script> <!---Execute Index Javascripts-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!---typing script animation library CDN-->
+
     </body> 
 </html>
